@@ -7,7 +7,7 @@ contract TestDelegateCall {
     uint256 public value;
 
     function setVars(uint256 _num) external payable {
-        num = _num;
+        num = 2 * _num;
         sender = msg.sender;
         value = msg.value;
     }
